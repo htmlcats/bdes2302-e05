@@ -16,7 +16,7 @@ export default () => {
 
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation]}
       spaceBetween={0}
       slidesPerView={1}
       navigation={{
@@ -24,7 +24,6 @@ export default () => {
         prevEl: "#featured_prev"
       }}
       loop
-      onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
